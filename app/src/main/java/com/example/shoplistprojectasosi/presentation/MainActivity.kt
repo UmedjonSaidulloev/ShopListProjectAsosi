@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             val tvCount = view.findViewById<TextView>(R.id.tv_count)
             tvName.text = shopItem.name
             tvCount.text = shopItem.count.toString()
-            view.setOnClickListener(){
+            view.setOnClickListener{
                 viewModel.changeEnableState(shopItem)
                 true
             }
